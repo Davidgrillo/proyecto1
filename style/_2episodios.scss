@@ -1,6 +1,7 @@
 .episodios {
     height: 1203.5px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 90%, 0 97%);
     h2 {
         margin: 0;
         padding: 0;
@@ -18,8 +19,7 @@
 
 @media only screen and (min-width: 320px) {
     .episodios {
-        background:  #0000FF;
-    clip-path: polygon(0 19%, 100% 0, 100% 77%, 0 96%);
+        clip-path: polygon(0 19%, 100% 0, 100% 77%, 0 96%);
         display: grid;
         grid-template: 186px 62px 26px 232px 72px 232px 232px / 100px 584px 72px 584px 100px;
         height: 1042px;

@@ -20,7 +20,6 @@ header label {
   width: 30px;
   height: 30px;
   padding: 10px;
-  border-right: 1px solid #ffffff;
 }
 
 header label:hover {
@@ -259,6 +258,8 @@ header label:hover {
 .episodios {
   height: 1203.5px;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 90%, 0 97%);
+          clip-path: polygon(0 5%, 100% 0, 100% 90%, 0 97%);
 }
 
 .episodios h2 {
@@ -278,7 +279,6 @@ header label:hover {
 
 @media only screen and (min-width: 320px) {
   .episodios {
-    background: #0000FF;
     -webkit-clip-path: polygon(0 19%, 100% 0, 100% 77%, 0 96%);
             clip-path: polygon(0 19%, 100% 0, 100% 77%, 0 96%);
     display: -ms-grid;
@@ -344,6 +344,7 @@ header label:hover {
 }
 
 .de-donde-venimos img {
+  position: relative;
   width: 300px;
   height: 519px;
   margin: -150px 0 0 0;
@@ -642,9 +643,9 @@ header label:hover {
 
 .novedades {
   height: 341px;
-  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  -webkit-clip-path: polygon(0 31%, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 31%, 100% 0, 100% 100%, 0% 100%);
+  background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 }
 
 .novedades h2 {
