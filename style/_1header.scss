@@ -1,0 +1,244 @@
+header {
+    width: 100%;
+}
+
+#lista ul li {
+    font-size: $font1;
+}
+
+#btn-menu {
+    display: none;
+}
+
+header {
+    .menu-hamburguesa {
+        height: 44px;
+    }
+    label {
+        display: none;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        border-right: 1px solid #ffffff;
+    }
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, .3);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    border-right: 1px solid #fafafa;
+}
+
+.menu li:hover {
+    background: #00F3BB;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 100px;
+    color: #060A24;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header label {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        background: #00F3BB;
+        width: 70%;
+        margin-left: -70%;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li {
+        border-top: 1px solid #ffffff;
+    }
+    #btn-menu:checked~.menu {
+        margin: 0;
+    }
+}
+
+
+/* Conetenedor Titulo */
+
+.titulo {
+    height: 303px;
+    padding: 29px 16px 24px;
+    h1 {
+        margin: 0;
+        height: 82px;
+    }
+    p {
+        margin-top: 16px;
+        height: 66px;
+        width: 288px;
+        text-align: justify;
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 36px;
+        height: 48px;
+        width: 100%;
+        background: #00F3BB;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 22px;
+    }
+
+    span:nth-of-type(1) {
+        width: 85px;
+        height: 42px;
+    }
+    span:nth-of-type(2) {
+        width: 101px;
+        height: 42px;
+        margin-right: 80px;
+        text-decoration: line-through;
+    }
+    span:nth-of-type(3) {
+        width: 212px;
+        height: 42px;
+    }
+
+}
+
+@media (min-width: 320px) {
+    header{
+      
+    
+        i{
+            float: left;
+            width: 36px;
+            height: 36px;
+            margin: 22px  0px 22px 100px ;
+        }
+        nav{
+            float: right;
+            display: block;
+            }
+          #lista{
+                display: flex;
+                justify-content: flex-end;
+                list-style: none;
+                border: none;    
+            } 
+    
+            .menu li a {
+                display: block;
+                padding: 15px 20px;
+                color: black;
+                text-decoration: none;
+                width: 87px;
+                height: 28px;
+                padding-right: 48px;
+                padding-top: 26px;
+            }
+            span{
+                margin-top: 120px;
+                align-items: center;
+                
+                
+    
+            }
+            .conoce-mas{
+                width: 226px;
+                height: 56px;
+            }
+            .titulo{
+                height: 369px;
+                margin-left: 200px;
+                margin-right: 518px;
+                padding: 0;
+                margin-top: 120px;
+
+                span:nth-of-type(1) {
+                    width: 152px;
+                    height: 84px;
+                }
+                span:nth-of-type(2) {
+                    width: 179px;
+                    height: 84px;
+                    margin: 0;
+                    text-decoration: line-through;
+                }
+                span:nth-of-type(3) {
+                    width: 391px;
+                    height: 84px;
+                }
+                
+            }
+            .titulo h1{
+                width: 740px;
+                height: 84px;
+                font-family: $font2;
+                font-size: 64px;
+                color: #060A24;
+                letter-spacing: 0;
+            }
+            .titulo p{
+                width: 628px;
+                height: 48px;
+                font-family: $font1;
+                font-size: 16px;
+                color: #060A24;
+                letter-spacing: 0;
+                line-height: 24px;
+                text-align: justify;
+            }
+            .titulo .conoce-mas{
+                height: 56px;
+                width: 226px;
+                display: block;
+                justify-content: center;
+                align-items: center;
+                background: #00F3BB;
+                margin-top: 56px;
+            }
+                
+                a {
+                    width: 108px;
+                    height: 24px;
+                    margin-top: 0;
+                }
+    
+                li:nth-of-type(1) {
+                    margin-right: 48px;
+                }
+                li:nth-of-type(2) {
+                    margin-right: 48px;
+                }
+                li:nth-of-type(3) {
+                    margin-right: 48px;
+                }
+                li:nth-of-type(4) {
+                    margin-right: 100px;
+                }
+               
+            }
+                
+            }
