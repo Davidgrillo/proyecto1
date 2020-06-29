@@ -369,8 +369,8 @@ iframe {
 @media only screen and (min-width: 321px) {
   .episodios {
     width: 1440px;
-    -webkit-clip-path: polygon(100% 0, 100% 87%, 0 100%, 0 4%);
-            clip-path: polygon(100% 0, 100% 87%, 0 100%, 0 4%);
+    -webkit-clip-path: polygon(0 15%, 99% 0, 100% 85%, 0% 100%);
+            clip-path: polygon(0 15%, 99% 0, 100% 85%, 0% 100%);
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 186px 62px 26px 232px 72px 232px 232px;
@@ -922,10 +922,6 @@ h2 {
   color: #060A24;
   letter-spacing: 0;
   line-height: 22px;
-}
-
-.menu a {
-  font-weight: none;
 }
 
 a {
